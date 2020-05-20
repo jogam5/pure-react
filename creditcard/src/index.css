@@ -1,0 +1,46 @@
+.credit-card {
+	width: 300px;
+	height: 150px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background: blue;
+	padding: 15px;
+	color: white;
+	font-family: Helvetica;
+}
+
+.bank-name {
+	font-size: 26px;
+	text-align: right;
+}
+
+.account-number {
+	font-size: 22px;
+	position: relative;
+	top: 35px;
+	letter-spacing: 0.2em;
+	text-align: center;
+}
+
+.expiration-date {
+	position: relative;
+	left: 90px;	
+	top: 45px;
+}
+
+.valid-thru {
+	float: left;
+	margin-right: 6px;
+}
+
+.valid-thru p {
+	line-height: 0.1;
+	font-size: 7px;
+}	
+
+.cardholder-name {
+	position: relative;
+	top: 50px;
+	left: -15px;
+	font-size: 20px;
+}
