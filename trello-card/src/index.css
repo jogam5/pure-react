@@ -1,0 +1,50 @@
+.card {
+	font-family: 'FontAwesome';
+	border: 1px solid #e7edf7;
+	border-radius: 4px;
+	width: 250px;
+	background: #e7edf7;
+	margin: 4px;
+}
+
+.card-row {
+	width: 100%;	
+	margin: 10px;
+}
+
+.row-element {
+	float: left;
+}
+
+.card-header {
+	width: 100%;
+	padding: 6px 6px;
+}
+
+.title {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+ul.task-list {
+	list-style-type: none;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+ul.task-list li {
+	background: white;
+	padding: 6px;
+	margin: 5px 6px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.card-footer {
+	padding: 6px 6px;
+}
+
+.footer {
+	color: #bbb;
+	font-size: 12px;
+}

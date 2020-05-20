@@ -1,0 +1,421 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ====
+  Custom Styles
+  ====
+*/
+
+.app {
+	font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+  ====
+  Nav
+  ====
+*/
+
+.nav { /* main nav cointainer */
+	padding: 16px;
+	height: 80px;
+	align-items: center;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.nav-left { /* logo and website name */
+	box-sizing: border-box;
+}
+
+.website-nav-label {
+	display: flex;
+	align-items: center;
+}
+
+.logo-nav {
+	width: 26px;
+	vertical-align: middle;
+}
+
+.website-name {
+	color: #E60323;
+	font-size: 20px;
+	font-weight: 700;
+	box-sizing: border-box;
+}
+
+.nav-center { /* search interface */
+ /* no width and it shrinks 
+	100% width will not affect 
+	the left and right side 
+ */
+	width: 100%;
+}
+
+.search-box {
+	/* width: 100%; not required because it is block by default */
+	border: 1px solid #EFEFEF;
+	border-radius: 24px;
+	box-sizing: border-box;
+	height: 48px;
+	background-color: #EFEFEF;
+	margin-left: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.fa-search {
+	margin-left: 14px;
+}
+
+.search-input {
+	border: 1px solid #EFEFEF;
+	box-sizing: border-box;
+	height: 48px;
+	width: 100%;
+	background-color: #EFEFEF;
+	color: #818181; 
+	font-size: 16px;
+	margin-left: 10px;
+	margin-right: 50px;
+	font-weight: 400;
+}
+
+.nav-right {
+	display: flex;
+}
+
+.login-button {
+	border: 1px solid #EFEFEF;
+	border-radius: 24px;
+	box-sizing: border-box;   
+	background-color: #EFEFEF;
+	font-size: 16px;
+	font-weight: 700;
+	height: 48px;
+	width: 80px;
+	margin-left: 20px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.login-button:hover {
+	background-color: #ccc;
+}
+
+.login-button a {
+	text-decoration: none;
+	color: black;
+}
+
+.signup-button {
+	border: 1px solid #EFEFEF;
+	border-radius: 24px;
+	box-sizing: border-box;  
+	background-color: #E60323;
+	color: white;
+	font-weight: 700;
+	font-size: 16px;
+	height: 48px;
+	width: 90px;
+	margin-left: 10px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.signup-button:hover {
+	background-color: #D10323;
+}
+
+.signup-button a {
+	text-decoration: none;
+	color: white;
+}
+
+.fa-sort-desc {
+	position: relative;
+	top: 15px;
+	left: 5px;
+}
+
+/*
+  ====
+  Board Profile
+  ====
+*/
+
+.board-profile { /* main container for profile */
+	width: 800px;
+	margin: 0 auto;
+}
+
+.board-header {
+	text-align: right;
+	padding: 10px 0px;
+}
+
+.follow-button button{
+	border: 1px solid #EFEFEF;
+	border-radius: 24px;
+	box-sizing: border-box;  
+	background-color: #E60323;
+	color: white;
+	font-weight: 700;
+	font-size: 16px;
+	height: 45px;
+	width: 78px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.board-center {
+	width: 100%;
+	display: flex;
+	/* align-items: center; not here */
+}
+
+.board-left { /* contains the logo */
+	width: 20%;
+}
+
+.logo-board {
+	width: 168px;
+	height: 168px;
+	border-radius: 50%;
+}
+
+.board-right { /* contains the information */
+	width: 80%;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.board-right h1 {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.board-details { /* no flex is required if inside elements are span */ 
+	/* display: flex; */
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.following-count,
+.followers-count {
+	font-weight: 700;
+}
+
+.following-button,
+.followers-button,
+.external-link{
+	margin-right: 15px;
+}
+
+.external-link a {
+	color: black;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+/*
+  ====
+  Board Grid
+  ====
+*/
+
+/*
+ * To do:
+ * 1. From 263 line check what is the effect of removing the styles in the Grid, DONE
+ * 2. Check the styles you left commented, DONE
+ * 3. Fix the grid for shorter values in the width, DONE
+ * 4. Check in iphone, DONE
+ * 5. Rethink each three main components
+ * 6. Check which components can be converted into independent files
+ * 7. Write your reflections
+ * 8. Repeat the Nav with own grid
+ * 9. Repeat the Medium section with own grid
+ */
+
+.grid-perimeter {
+	align-self: center; /* q:?, answ: aligns elements vertically inside flex */
+	box-sizing: border-box;
+	margin-top: 36px;
+}
+
+.grid-body {
+	margin: auto;
+}
+
+.grid {
+	margin: 0 auto 14px;
+	position: relative;
+}
+
+@media (max-width: 2079px) and (min-width: 1820px) {
+	.grid .centered-within-wrapper {
+		width: 1820px;
+	}
+}
+
+@media (max-width: 1819px) and (min-width: 1560px) {
+	.grid .centered-within-wrapper {
+		width: 1560px;
+	}
+}
+
+@media (max-width: 1559px) and (min-width: 1300px) {
+	.grid .centered-within-wrapper {
+		width: 1300px;
+	}
+}
+
+@media (max-width: 1299px) and (min-width: 1040px) {
+	.grid .centered-within-wrapper {
+		width: 1040px;
+	}
+}
+
+@media (max-width: 1039px) and (min-width: 780px) {
+	.grid .centered-within-wrapper {
+		width: 780px;
+	}
+}
+
+@media (max-width: 779px) and (min-width: 520px) {
+	.grid .centered-within-wrapper {
+		width: 520px;
+	}
+}
+
+.grid-items {
+	margin: 0 auto 14px;
+	position: relative;
+}
+
+.board-grid {
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	display: flex;	
+	flex-direction: row;
+}
+
+.board-grid-header {
+	margin: 25px auto;
+	width: 800px;
+}
+
+.board-grid-header h1 {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.row-element {
+	display: inline-block; /* q: check, answ: accepts width contrary to block*/
+	padding: 8px 12px;
+	box-sizing: border-box;
+}
+
+/*
+  ====
+  Board Card
+  ====
+*/
+
+.board-card {
+	border: none;
+	box-shadow: none; /* ? adds a shadow effect around an element's frame */
+	width: 236px;
+}
+
+.board-card a:link{
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+	background: blue;
+}
+
+.board-card a:hover {
+	background: gold;
+}
+
+.board-card a:visited {
+	color: #333;
+}
+
+.board-array-image {
+	width: 236px;
+	height: 225px;
+}
+
+.board-image {
+	height: 100%;
+	margin: 2px;
+	border-radius: 2px;
+
+}
+
+.array-row {
+	display: flex;
+	width: 236px;
+	height: 111px;
+	margin-bottom: 2px;
+}
+
+.board-card-details h3{
+	font-weight: 400;
+}
+
+.board-details-footer {
+	display: flex;
+	font-size: 14px;
+}

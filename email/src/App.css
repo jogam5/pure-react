@@ -1,0 +1,52 @@
+.App {
+	padding: 10px;
+}
+
+.email {
+	width: 800px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	font-size: 12px;
+	margin: 0 auto;
+}
+
+.top-line {
+	padding: 2px;
+	font-weight: bold;
+}
+
+.sender {
+	position: relative;
+	left: 7%;
+}
+
+.subject {
+	position: relative;
+	left: 30%;
+}
+
+.date-email {
+	position: relative;
+	float: right;
+}
+
+.message {
+	margin: 2px;
+	color: #aaa;
+	position: relative;
+	left: 7%;
+}
+
+
+.checkmark {
+	position: relative;
+	top: 20px;
+	left: 1px;
+}
+
+.fa-heart {
+	position: relative; 
+	top: 20px; 
+	left: 12px;
+}
+

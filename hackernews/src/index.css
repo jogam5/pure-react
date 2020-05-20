@@ -1,0 +1,109 @@
+.news {
+	border: 1px solid #eee;
+	width: 85%;
+	margin: 0 auto;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+/* NavBar */
+
+.nav-bar {
+	background-color: #FF6600;
+	height: 25px;
+	max-height: 30px;
+}
+
+.nav-bar a {
+	text-decoration: none;
+	color: black;
+}
+
+.logo-nav-bar {
+	float: left;
+	width: 18px;
+	height: 18px;
+	padding: 4px;
+}
+
+.website-name {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 4px;
+	float: left;
+}	
+
+.menu-bar {
+	float: left;
+	padding: 4px 6px;
+	font-size: 10pt;
+}
+
+.menu-item {
+	float: left;
+	padding-left: 2px;
+}
+
+.login {
+	float:right;
+	padding: 4px;
+}
+
+/* News List */
+
+.news-list {
+	background: #F6F6EF; 
+	height: 800px;
+	max-height: 100%;
+	margin:0px;
+	padding: 4px;
+}
+
+ul.news-list {
+	list-style-type: none;
+}
+
+.news-item {
+	width: 100%;
+	padding: 4px;
+}
+
+.headline {
+	font-size: 14px;
+}
+
+.item-rank {
+	color: #999;
+}
+
+.fa-sort-asc {
+	padding: 0px 4px;
+	color: #999;
+}
+
+.item-headline {
+	padding-left: 4px;
+}
+
+.item-source {
+	color: #999;
+	padding-left: 4px;
+	font-size: 10px;
+}
+
+.footer {
+	padding: 2px 0px 2px 35px;
+}
+
+.item-information {
+	font-size: 9px;
+	color: #999;
+}
+
+.item-information a {
+	text-decoration: none;
+	color: #999;
+}
+
+.time, .comments {
+	padding-left: 4px;
+}
