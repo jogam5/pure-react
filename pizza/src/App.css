@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+
+.screen {
+	background: #006391;
+	margin: 20px;
+	width: 270px;
+	border-radius: 4px;
+	color: white;
+}
+
+.label {
+	display: block;
+}
+
+.size {
+	margin: 10px 10px;
+	padding-top: 10px;
+}
+
+.ingridients {
+	margin: 10px 10px;
+}
+
+#flavor {
+	display: block;
+	margin: 5px 10px;
+}
+
+.gluten {
+	margin: 15px 0px;
+}
+
+.notes {
+	margin: 5px 10px;
+}
+
+.order-button {
+	margin: 12px 10px;
+	background: #E61939;  
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+/* KeyPad */
+
+.pad {
+	width: 200px;
+	height: 320px;
+	border: 6px solid #BABBB6;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	background: black;
+	color: white;
+	margin: 50px;
+}
+
+.secret {
+	width: 120px;
+	height: 25px;
+	background: #BABBB6;
+	position: relative;
+	margin: 0px auto;
+	top: 70px;
+	padding: 5px;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 2px;
+	border: 1px solid #FFF159;
+}
+
+.pad-border {
+	width: 120px;
+	margin: 0px auto;
+	position: relative;
+	top: 85px;
+}
+
+.row {
+	width: 120px;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.digit button{
+	font-size: 16px;
+}
+
+.send {
+	width: 120px;
+	margin: 0px auto;
+	position:relative;
+	top: 100px;
+	text-align: center;
+}
+
+.send input {
+	width: 80px;
+	background: #BABBB6;
+	border: none;
+}
+
